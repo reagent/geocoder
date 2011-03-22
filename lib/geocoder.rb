@@ -1,4 +1,7 @@
 $:.unshift File.dirname(__FILE__)
 
-class Geocoder
+require 'cgi'
+require 'geocoder/request'
+
+module Geocoder
 end
