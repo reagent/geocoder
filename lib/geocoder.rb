@@ -8,4 +8,10 @@ require 'geocoder/request'
 require 'geocoder/response'
 
 module Geocoder
+
+  def self.geocode_address(address)
+    request = Request.new(:address => address)
+    request.response.to_hash if request.response.success?
+  end
+
 end
