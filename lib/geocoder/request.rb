@@ -11,6 +11,14 @@ module Geocoder
       "#{base_url}?#{query}"
     end
 
+    def endpoint
+      URI.parse(endpoint_url)
+    end
+
+    def response
+      @response ||= Response.new(Net::HTTP.get_response(endpoint))
+    end
+
     private
 
     def base_url
