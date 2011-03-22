@@ -1,0 +1,57 @@
+{
+  "status": "OK",
+  "results": [ {
+    "types": [ "street_address" ],
+    "formatted_address": "1535 Pearl St, Boulder, CO 80302, USA",
+    "address_components": [ {
+      "long_name": "1535",
+      "short_name": "1535",
+      "types": [ "street_number" ]
+    }, {
+      "long_name": "Pearl St",
+      "short_name": "Pearl St",
+      "types": [ "route" ]
+    }, {
+      "long_name": "Boulder",
+      "short_name": "Boulder",
+      "types": [ "locality", "political" ]
+    }, {
+      "long_name": "Boulder",
+      "short_name": "Boulder",
+      "types": [ "administrative_area_level_3", "political" ]
+    }, {
+      "long_name": "Boulder",
+      "short_name": "Boulder",
+      "types": [ "administrative_area_level_2", "political" ]
+    }, {
+      "long_name": "Colorado",
+      "short_name": "CO",
+      "types": [ "administrative_area_level_1", "political" ]
+    }, {
+      "long_name": "United States",
+      "short_name": "US",
+      "types": [ "country", "political" ]
+    }, {
+      "long_name": "80302",
+      "short_name": "80302",
+      "types": [ "postal_code" ]
+    } ],
+    "geometry": {
+      "location": {
+        "lat": 40.0189979,
+        "lng": -105.2752141
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "southwest": {
+          "lat": 40.0158503,
+          "lng": -105.2783617
+        },
+        "northeast": {
+          "lat": 40.0221455,
+          "lng": -105.2720665
+        }
+      }
+    }
+  } ]
+}

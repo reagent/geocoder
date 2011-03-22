@@ -16,7 +16,7 @@ spec = Gem::Specification.new do |s|
   s.files            = %w(README.rdoc Rakefile) + Dir.glob("{lib,test}/**/*")
   # s.executables    = ['geocoder']
 
-  # s.add_dependency('gem_name', '~> 0.0.1')
+  s.add_dependency('json', '~> 1.5.0')
 
   s.add_development_dependency('rake', '~> 0.8.0')
   s.add_development_dependency('bundler', '~> 1.0.0')

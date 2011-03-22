@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.date = %q{2011-03-21}
   s.email = %q{reaganpr@gmail.com}
   s.extra_rdoc_files = ["README.rdoc"]
-  s.files = ["README.rdoc", "Rakefile", "lib/geocoder", "lib/geocoder/version.rb", "lib/geocoder.rb"]
+  s.files = ["README.rdoc", "Rakefile", "lib/geocoder", "lib/geocoder/request.rb", "lib/geocoder/response.rb", "lib/geocoder/version.rb", "lib/geocoder.rb"]
   s.homepage = %q{http://sneaq.net}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
@@ -21,15 +21,18 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<json>, ["~> 1.5.0"])
       s.add_development_dependency(%q<rake>, ["~> 0.8.0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.0"])
     else
+      s.add_dependency(%q<json>, ["~> 1.5.0"])
       s.add_dependency(%q<rake>, ["~> 0.8.0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<rspec>, ["~> 2.0"])
     end
   else
+    s.add_dependency(%q<json>, ["~> 1.5.0"])
     s.add_dependency(%q<rake>, ["~> 0.8.0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<rspec>, ["~> 2.0"])
