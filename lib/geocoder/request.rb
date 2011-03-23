@@ -3,6 +3,10 @@ module Geocoder
 
     attr_accessor :additional_parameters
 
+    def self.get(parameters = {})
+      new(parameters).response
+    end
+
     def initialize(parameters = {})
       self.additional_parameters = parameters
     end

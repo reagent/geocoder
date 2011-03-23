@@ -6,6 +6,7 @@ require 'json'
 
 require 'geocoder/request'
 require 'geocoder/response'
+require 'geocoder/address'
 require 'geocoder/coordinates'
 
 module Geocoder

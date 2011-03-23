@@ -2,6 +2,17 @@ require 'spec_helper'
 
 describe Geocoder::Request do
 
+  describe ".get" do
+    it "returns a response" do
+      request = Geocoder::Request.new
+      request.stub(:response).with().and_return('response')
+
+      Geocoder::Request.stub(:new).with(:address => 'foo').and_return(request)
+
+      Geocoder::Request.get(:address => 'foo').should == 'response'
+    end
+  end
+
   describe "#endpoint_url" do
     it "knows the base URL" do
       request = Geocoder::Request.new
